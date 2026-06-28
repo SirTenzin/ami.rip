@@ -67,6 +67,26 @@ a {
 	border-right: 1px solid var(--border);
 }
 
+/* drop the framing rails + collapse the nested side padding on mobile */
+@media (max-width: 640px) {
+	.app-shell {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.page-wrap {
+		border-left: 0;
+		border-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.markdown {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
 .page-content {
 	flex: 1 0 auto;
 	display: flex;
