@@ -1,0 +1,12 @@
+{
+  "name": "Light",
+  "semantic": {
+    "background": "#fafafa",
+    "border": "#e5e5e5",
+    "text": "#000000",
+    "muted": "#737373",
+    "subtle": "#a3a3a3",
+    "link": "#000000",
+    "code": "#f5f5f5"
+  }
+}
