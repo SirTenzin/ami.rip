@@ -1,4 +1,4 @@
-import { fetchContributions } from "../src/lib/github/contributions";
+import { fetchContributions } from "../src/lib/github/contributions.js";
 
 export const config = { runtime: "edge" };
 
