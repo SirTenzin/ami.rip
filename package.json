@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "og": "bun run scripts/generate-og.tsx",
+    "sm": "./scripts/update-usage.sh && git add src/data/usage.ts public/og.png && git commit -m 'chore: 🤖 update slopmeter accolades' && git push",
     "build": "bun run og && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
