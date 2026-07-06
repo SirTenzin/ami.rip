@@ -18,6 +18,9 @@ SLOPMETER_MAX_JSONL_RECORD_BYTES=9999999999 bunx slopmeter@latest --all --format
 echo "==> rebuilding src/data/usage.ts"
 ./scripts/build-usage.sh "$EXPORT"
 
+echo "==> merging with committed history (retention losses can't shrink totals)"
+python3 ./scripts/merge-usage.py
+
 echo "==> regenerating public/og.png"
 bun run og
 
